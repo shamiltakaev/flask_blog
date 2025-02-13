@@ -11,7 +11,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 import logging
 from logging.handlers import RotatingFileHandler, SMTPHandler
-
+FILENAME = "/data/todo.json" if "AMVERA" in os.environ else "todo.json"
 
 
 def get_locale():
